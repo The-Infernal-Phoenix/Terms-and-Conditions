@@ -1,4 +1,4 @@
-text = ""
+text = page
 list_tostore = []
 list_tostore = text.split(".")
 print(list_tostore)
