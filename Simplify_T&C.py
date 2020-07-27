@@ -3,7 +3,9 @@ from selenium import webdriver
 PATH = 'C:\\Program Files (x86)\\chromedriver.exe'
 driver = webdriver.Chrome(PATH)
 
-driver.get("https://www.facebook.com/policy.php")
+web_url=input("enter the url of the website's privacy policy you want:")
+
+driver.get(web_url)
 body = driver.find_element_by_tag_name('body')
 text = body.text
 
